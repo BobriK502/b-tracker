@@ -1,0 +1,30 @@
+.bar_button {
+  height: 30px;
+  width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar_button_icon {
+  height: 20px;
+  width: 20px;
+}
+
+.bar {
+  height: 60px;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.bar_content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  background: rgba(255, 255, 255, 1);
+}

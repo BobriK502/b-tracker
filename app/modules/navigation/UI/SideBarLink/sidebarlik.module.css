@@ -1,0 +1,46 @@
+.barlink {
+    height: 4rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 0px 1.5rem;
+
+    align-items: center;
+}
+
+.barlink_container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.barlink_container::before {
+    content: '';
+    position: absolute;
+    left: -4rem;
+
+    height: 4rem;
+    width: 4rem;
+
+    border-radius: .2rem;
+
+    background-color: rgb(59, 130, 246);
+}
+
+.barlink_container__active::before {
+    left: -3.7rem;
+}
+
+.barlink_container:hover::before {
+    left: -3.7rem;
+
+    transition: all 1s;
+    transform: rotate(45deg);
+}
+
+.barlink_minimal {
+    align-items: center;
+}
